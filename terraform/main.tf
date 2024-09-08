@@ -1,10 +1,10 @@
 terraform {
   required_version = ">= 1.5.7"
   backend "azurerm" {
-     resource_group_name  = "azureterraformtest"
-     storage_account_name = "terraformrashiyastate"
-     container_name       = "statefilecontainer"
-     key                  = "test.tfstate"
+    resource_group_name  = "azureterraformtest"
+    storage_account_name = "terraformrashiyastate"
+    container_name       = "statefilecontainer"
+    key                  = "test.tfstate"
   }
 }
 
