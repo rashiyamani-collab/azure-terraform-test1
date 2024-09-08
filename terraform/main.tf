@@ -4,7 +4,7 @@ terraform {
     resource_group_name  = "azureterraformtest"
     storage_account_name = "terraformrashiyastate"
     container_name       = "statefilecontainer"
-    key                  = "test.tfstate"
+    key                  = "statefilecontainer.tfstate"
   }
 }
 
@@ -18,7 +18,7 @@ data "azurerm_client_config" "current" {}
 
 #Create Resource Group
 resource "azurerm_resource_group" "azureterraformtest" {
-  name     = "azureterraformtest"
+  name     = "statefilecontainer"
   location = "eastus2"
 }
 
