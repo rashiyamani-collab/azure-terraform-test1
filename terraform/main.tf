@@ -18,7 +18,7 @@ data "azurerm_client_config" "current" {}
 
 #Create Resource Group
 resource "azurerm_resource_group" "azureterraformtest3" {
-  name     = "statefilecontainer"
+  name     = "azureterraformtest3"
   location = "eastus2"
 }
 
